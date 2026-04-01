@@ -8,10 +8,14 @@
   padding: 4rem 2.5rem 4rem 5rem;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, #0D0602 0%, #1A0E08 55%, #201510 100%);
+  background: linear-gradient(145deg, rgba(255, 247, 230, 0.95), rgba(255, 235, 162, 0.95));
+  border-bottom: 1px solid rgba(255, 202, 112, 0.25);
 }
 
 .hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.iv-deco-float {
+  display: none !important;
+}
 .hero-circle {
   position: absolute;
   border-radius: 50%;
@@ -20,19 +24,19 @@
 }
 .hero-circle-1 {
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(212,168,67,0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(255,216,116,0.35), transparent 70%);
   top: -150px; right: -100px;
   animation: float1 8s ease-in-out infinite;
 }
 .hero-circle-2 {
   width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(232,135,90,0.2), transparent 70%);
+  background: radial-gradient(circle, rgba(255,235,160,0.32), transparent 70%);
   bottom: -50px; left: 25%;
   animation: float2 10s ease-in-out infinite;
 }
 .hero-circle-3 {
   width: 250px; height: 250px;
-  background: radial-gradient(circle, rgba(106,155,126,0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(255,247,226,0.28), transparent 70%);
   top: 40%; left: -60px;
   animation: float1 12s ease-in-out infinite reverse;
 }
@@ -91,7 +95,7 @@
 .hero-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: var(--text-dark);
   line-height: 1.75;
   margin-bottom: 2.5rem;
   max-width: 480px;
@@ -180,7 +184,7 @@
 
 /* ─── WELCOME SECTION ─────────────────────────── */
 .welcome-section {
-  background: linear-gradient(135deg, #0D0602, #1A0E08);
+  background: linear-gradient(135deg, rgba(255,248,235,0.95), rgba(255,240,206,0.95));
   padding: 4rem 2.5rem;
   position: relative;
   overflow: hidden;
@@ -291,10 +295,10 @@
 
 /* ─── WHY SECTION ─────────────────────────────── */
 .why-section {
-  background: linear-gradient(135deg, #0D0602 0%, #1A0C06 100%);
+  background: linear-gradient(135deg, rgba(255,247,220,0.95), rgba(255,239,198,0.95));
   padding: 6rem 2.5rem;
-  border-top: 1px solid rgba(212,168,67,0.08);
-  border-bottom: 1px solid rgba(212,168,67,0.08);
+  border-top: 1px solid rgba(255,210,116,0.25);
+  border-bottom: 1px solid rgba(255,210,116,0.25);
 }
 .why-inner {
   max-width: 1100px;
@@ -319,7 +323,7 @@
 .why-item.visible { opacity:1; transform:translateX(0); transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.3s, background 0.3s; }
 .why-icon { font-size: 1.8rem; flex-shrink: 0; }
 .why-item h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--text-dark); margin-bottom: 0.3rem; }
-.why-item p { font-size: 0.88rem; color: var(--text-light); line-height: 1.65; }
+.why-item p { font-size: 0.88rem; color: var(--text-dark); line-height: 1.65; }
 
 .why-visual { display: flex; align-items: center; justify-content: center; }
 .why-card-stack { position: relative; width: 200px; height: 240px; }
@@ -345,6 +349,9 @@
   padding: 6rem 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
+  background: linear-gradient(145deg, rgba(255,249,236,0.95), rgba(255,241,207,0.92));
+  border-radius: 30px;
+  border: 1px solid rgba(255,210,116,0.18);
 }
 .testimonials-grid {
   display: grid;
@@ -368,7 +375,7 @@
   box-shadow: 0 4px 24px rgba(0,0,0,0.5), 0 0 30px rgba(212,168,67,0.08);
 }
 .testi-stars { color: var(--gold); font-size: 0.95rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
-.testi-card p { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; color: var(--text-light); line-height: 1.75; margin-bottom: 1.5rem; font-style: italic; }
+.testi-card p { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; color: var(--text-dark); line-height: 1.75; margin-bottom: 1.5rem; font-style: italic; }
 .testi-author { display: flex; align-items: center; gap: 0.75rem; }
 .testi-avatar {
   width: 40px; height: 40px; border-radius: 50%;
@@ -383,12 +390,12 @@
 
 /* ─── CTA BANNER ──────────────────────────────── */
 .cta-banner {
-  background: linear-gradient(135deg, #0D0602 0%, #180A04 50%, #1A0E08 100%);
+  background: linear-gradient(135deg, rgba(255,248,229,0.95), rgba(255,239,188,0.96));
   padding: 5rem 2.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid rgba(212,168,67,0.1);
+  border-top: 1px solid rgba(255,204,105,0.2);
 }
 .cta-banner::before {
   content: '';

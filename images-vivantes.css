@@ -8,22 +8,22 @@
    élément flotte à son propre rythme               */
 @keyframes floatA {
   0%,100% { transform: translateY(0px) rotate(0deg); }
-  33%     { transform: translateY(-12px) rotate(1deg); }
-  66%     { transform: translateY(-6px) rotate(-0.5deg); }
+  33%     { transform: translateY(-6px) rotate(0.5deg); }
+  66%     { transform: translateY(-3px) rotate(-0.25deg); }
 }
 @keyframes floatB {
   0%,100% { transform: translateY(0px) rotate(0deg); }
-  40%     { transform: translateY(-16px) rotate(-1.5deg); }
-  70%     { transform: translateY(-5px) rotate(0.8deg); }
+  40%     { transform: translateY(-8px) rotate(-0.75deg); }
+  70%     { transform: translateY(-2px) rotate(0.4deg); }
 }
 @keyframes floatC {
   0%,100% { transform: translateY(0px) rotate(0deg); }
-  25%     { transform: translateY(-9px) rotate(1.2deg); }
-  60%     { transform: translateY(-18px) rotate(-0.8deg); }
+  25%     { transform: translateY(-4px) rotate(0.6deg); }
+  60%     { transform: translateY(-9px) rotate(-0.4deg); }
 }
 @keyframes ivPhotoSwap {
   0%   { opacity:1; transform:translate(-50%,-50%) scale(1); }
-  50%  { opacity:0; transform:translate(-50%,-54%) scale(0.93); }
+  50%  { opacity:0; transform:translate(-50%,-54%) scale(0.95); }
   100% { opacity:1; transform:translate(-50%,-50%) scale(1); }
 }
 @keyframes ringSpin {
@@ -34,9 +34,9 @@
   to   { transform: translateX(-50%); }
 }
 
-.iv-float-a { animation: floatA 6s ease-in-out infinite; }
-.iv-float-b { animation: floatB 7.5s ease-in-out infinite; }
-.iv-float-c { animation: floatC 9s ease-in-out infinite; }
+.iv-float-a { animation: floatA 8s ease-in-out infinite; }
+.iv-float-b { animation: floatB 10s ease-in-out infinite; }
+.iv-float-c { animation: floatC 12s ease-in-out infinite; }
 
 /* ── HERO SHOWCASE ────────────────────────────── */
 .iv-hero-showcase {

@@ -220,7 +220,7 @@
 }
 
 .chat-header {
-  background: linear-gradient(135deg, #0D0602, #180C06);
+  background: linear-gradient(135deg, rgba(255,247,237,0.95), rgba(255,238,206,0.95));
   padding: 1rem 1.25rem;
   display: flex;
   align-items: center;

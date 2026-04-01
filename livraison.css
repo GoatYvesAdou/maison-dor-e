@@ -276,8 +276,8 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: linear-gradient(135deg, #0D0602, #180C06);
-  border-bottom: 1px solid rgba(212,168,67,0.1);
+  background: linear-gradient(135deg, rgba(255,247,235,0.95), rgba(255,238,206,0.95));
+  border-bottom: 1px solid rgba(255,204,108,0.18);
 }
 .summary-icon-liv { font-size: 2.2rem; }
 .summary-header-liv h3 { font-family: 'Playfair Display', serif; color: var(--text-dark); font-size: 1.1rem; margin-bottom: 0.2rem; }
@@ -339,9 +339,9 @@
 
 /* ── COMMENT ÇA MARCHE ────────────────────────── */
 .how-section {
-  background: linear-gradient(135deg, #0D0602, #180C06);
+  background: linear-gradient(135deg, rgba(255,247,235,0.95), rgba(255,238,206,0.95));
   padding: 4rem 2.5rem;
-  border-top: 1px solid rgba(212,168,67,0.08);
+  border-top: 1px solid rgba(255,204,108,0.18);
 }
 .how-section .section-header h2 { color: var(--text-dark); }
 .how-section .section-header p  { color: var(--text-light); }

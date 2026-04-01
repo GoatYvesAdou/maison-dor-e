@@ -6,52 +6,48 @@
    ══════════════════════════════════════════════════════ */
 const IMGS = {
 
-  /* ── IMAGE DE GÂTEAUX RÉELS (URL) ───── */
+  /* ── IMAGE DE GÂTEAUX RÉELS (LOCAL et externe) ───── */
   cakes : [
-    { url: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=85&fit=crop", label: "Layer cake chocolat" },
-    { url: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=85&fit=crop", label: "Fraisier fraise" },
-    { url: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=800&q=85&fit=crop", label: "Macaron rose" },
-    { url: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800&q=85&fit=crop", label: "Gâteau chocolat intense" },
-    { url: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=85&fit=crop", label: "Tarte fruits rouges" },
-    { url: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800&q=85&fit=crop", label: "Cheesecake myrtille" },
-    { url: "https://images.unsplash.com/photo-1587248720327-8eb72564be1e?w=800&q=85&fit=crop", label: "Gâteau exotique" },
-    { url: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=85&fit=crop", label: "Choux caramel" },
-    { url: "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=800&q=85&fit=crop", label: "Forêt noire" },
-    { url: "https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?w=800&q=85&fit=crop", label: "Millefeuille" },
+    { url: "gateau choco.jpeg", label: "Layer cake chocolat" },
+    { url: "gateau fraise.png", label: "Fraisier fraise" },
+    { url: "foret noir.jpeg", label: "Forêt noire" },
+    { url: "tarte fraise.jpeg", label: "Tarte fruits rouges" },
+    { url: "macaron rose.jpeg", label: "Macaron rose" },
+    { url: "vanille.jpeg", label: "Vanille suprême" },
+    { url: "mangue.jpeg", label: "Gâteau exotique" },
+    { url: "myrtille.jpeg", label: "Millefeuille" },
   ],
 
   /* ── INGRÉDIENTS ──── */
   ingredients: [
-    { url: "https://images.unsplash.com/photo-1511381939415-e44c0dc4d64b?w=700&q=85&fit=crop", label: "Chocolat fondu" },
-    { url: "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=700&q=85&fit=crop", label: "Fraises fraîches" },
-    { url: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=700&q=85&fit=crop", label: "Macarons colorés" },
-    { url: "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=700&q=85&fit=crop", label: "Farine et beurre" },
-    { url: "https://images.unsplash.com/photo-1587491439149-bd2ff295d450?w=700&q=85&fit=crop", label: "Crème fouettée" },
-    { url: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=700&q=85&fit=crop", label: "Vanille et épices" },
+    { url: "vanille.jpeg", label: "Vanille premium" },
+    { url: "citron.jpeg", label: "Citron confit" },
+    { url: "cform.jpeg", label: "Crème fraîche" },
+    { url: "mangue.jpeg", label: "Mango frais" },
+    { url: "myrtille.jpeg", label: "Mytille" },
+    { url: "fruit rouge.jpeg", label: "Fruits rouges" },
   ],
 
   /* ── BOUTIQUE ─── */
   boutique: [
-    { url: "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?w=1400&q=85&fit=crop", label: "Atelier pâtisserie" },
-    { url: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=1400&q=85&fit=crop", label: "Vitrine pâtisserie" },
-    { url: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1400&q=85&fit=crop", label: "Gâteau élégant blanc" },
-    { url: "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=1400&q=85&fit=crop", label: "Boutique pâtisserie" },
+    { url: "wsection.jpeg", label: "Atelier Maison Dorée" },
+    { url: "imgp.jpeg", label: "Vitrine pâtisserie" },
+    { url: "cform.jpeg", label: "Plateau gourmands" },
+    { url: "gateau fraise.png", label: "Ambiance boutique" },
   ],
 
   /* ── carroussel ──────── */
   strip: [
-    "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1511381939415-e44c0dc4d64b?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1587248720327-8eb72564be1e?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&q=80&fit=crop",
-    "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?w=400&q=80&fit=crop",
+    "vanille.jpeg",
+    "citron.jpeg",
+    "gateau fraise.png",
+    "macaron rose.jpeg",
+    "myrtille.jpeg",
+    "mangue.jpeg",
+    "foret noir.jpeg",
+    "tarte fraise.jpeg",
+    "gateau choco.jpeg",
+    "fruit rouge.jpeg",
   ],
 };
 
@@ -60,11 +56,16 @@ const IMGS = {
    
 function mkImg(src, alt, cls) {
   const el = document.createElement('img');
-  el.src  = src;
+  const normalizedSrc = src ? encodeURI(src.trim()) : '';
+  el.src  = normalizedSrc;
   el.alt  = alt || '';
   el.loading = 'lazy';
   el.decoding = 'async';
   if (cls) el.className = cls;
+  el.onerror = () => {
+    // si le local manque, masquer l'élément pour éviter le cœur brisé
+    el.style.display = 'none';
+  };
   return el;
 }
 function mkDiv(cls) {
@@ -80,97 +81,92 @@ const onCommande = !!document.querySelector('.products-grid');
 const onPerso    = !!document.querySelector('.cakes-selector');
 const onService  = !!document.querySelector('.sc-main');
 
-
+try {
   //  PAGE ACCUEIL , CARTES et ARRIÈRE-PLANS
   
-if (onIndex) {
+  if (onIndex) {
 
-  /* 1. HERO : showcase photo flottante */
-  const showcase = document.querySelector('.cake-showcase');
-  if (showcase) {
-    showcase.innerHTML = '';
-    const pShowcase = mkDiv('iv-hero-showcase');
-    pShowcase.innerHTML = `<div class="iv-ring iv-ring-outer"></div><div class="iv-ring iv-ring-inner"></div>`;
+    /* 1. HERO : showcase photo flottante */
+    const showcase = document.querySelector('.cake-showcase');
+    if (showcase) {
+      showcase.innerHTML = '';
+      const pShowcase = mkDiv('iv-hero-showcase');
+      pShowcase.innerHTML = `<div class="iv-ring iv-ring-outer"></div><div class="iv-ring iv-ring-inner"></div>`;
 
-    const mainPhoto = mkImg(IMGS.cakes[0].url, IMGS.cakes[0].label, 'iv-hero-main-photo iv-float-a');
+      const mainPhoto = mkImg(IMGS.cakes[0].url, IMGS.cakes[0].label, 'iv-hero-main-photo iv-float-a');
 
-    const miniData = [
-      { src: IMGS.ingredients[0].url, label: IMGS.ingredients[0].label, cls: 'iv-mini iv-mini-1 iv-float-b' },
-      { src: IMGS.ingredients[1].url, label: IMGS.ingredients[1].label, cls: 'iv-mini iv-mini-2 iv-float-c' },
-      { src: IMGS.ingredients[2].url, label: IMGS.ingredients[2].label, cls: 'iv-mini iv-mini-3 iv-float-a' },
-    ];
-    miniData.forEach(d => {
-      const m = mkImg(d.src, d.label, d.cls);
-      m.addEventListener('mouseenter', () => {
-        mainPhoto.classList.add('iv-photo-swap');
-        setTimeout(() => { mainPhoto.src = d.src; mainPhoto.classList.remove('iv-photo-swap'); }, 180);
+      const miniData = [
+        { src: IMGS.ingredients[0].url, label: IMGS.ingredients[0].label, cls: 'iv-mini iv-mini-1 iv-float-b' },
+        { src: IMGS.ingredients[1].url, label: IMGS.ingredients[1].label, cls: 'iv-mini iv-mini-2 iv-float-c' },
+        { src: IMGS.ingredients[2].url, label: IMGS.ingredients[2].label, cls: 'iv-mini iv-mini-3 iv-float-a' },
+      ];
+      miniData.forEach(d => {
+        const m = mkImg(d.src, d.label, d.cls);
+        m.addEventListener('mouseenter', () => {
+          mainPhoto.classList.add('iv-photo-swap');
+          setTimeout(() => { mainPhoto.src = d.src; mainPhoto.classList.remove('iv-photo-swap'); }, 180);
+        });
+        pShowcase.appendChild(m);
       });
-      pShowcase.appendChild(m);
+
+      pShowcase.appendChild(mainPhoto);
+      showcase.appendChild(pShowcase);
+
+      /* rotation douce toutes les 8s */
+      let heroIdx = 0;
+      setInterval(() => {
+        heroIdx = (heroIdx + 1) % IMGS.cakes.length;
+        mainPhoto.classList.add('iv-photo-swap');
+        setTimeout(() => { mainPhoto.src = IMGS.cakes[heroIdx].url; mainPhoto.classList.remove('iv-photo-swap'); }, 200);
+      }, 8000);
+    }
+
+    /* 2. HERO BG : éléments ingrédients décoratifs (désactivés pour éviter bruit visuel) */
+    const heroBg = document.querySelector('.hero-bg');
+    if (heroBg) {
+      heroBg.style.opacity = '0.35';
+      heroBg.style.filter = 'blur(2px)';
+      // plus de décorations d'image ajoutées ici pour éviter éléments parasites visuels
+    }
+
+    /* 3. CARTES SIGNATURE :  */
+    document.querySelectorAll('.cake-card').forEach((card, i) => {
+      const iconDiv = card.querySelector('.cake-card-icon');
+      if (!iconDiv) return;
+      const wrap  = mkDiv('iv-card-img-wrap');
+      const photo = mkImg(IMGS.cakes[i % IMGS.cakes.length].url, IMGS.cakes[i % IMGS.cakes.length].label, 'iv-card-photo');
+      wrap.appendChild(photo);
+      iconDiv.replaceWith(wrap);
     });
 
-    pShowcase.appendChild(mainPhoto);
-    showcase.appendChild(pShowcase);
+    /* 4. photo  boutique  */
+    const whyVisual = document.querySelector('.why-visual');
+    if (whyVisual) {
+      whyVisual.innerHTML = '';
+      const photoWrap = mkDiv('iv-why-wrap');
+      photoWrap.innerHTML = `<div class="iv-why-badge">6 ans de savoir-faire ✦</div>`;
+      photoWrap.appendChild(mkImg(IMGS.boutique[1].url, 'Ambiance pâtisserie Maison Dorée', 'iv-why-photo iv-float-b'));
+      whyVisual.appendChild(photoWrap);
+    }
 
-    /* rotation douce toutes les 3.5s */
-    let heroIdx = 0;
-    setInterval(() => {
-      heroIdx = (heroIdx + 1) % IMGS.cakes.length;
-      mainPhoto.classList.add('iv-photo-swap');
-      setTimeout(() => { mainPhoto.src = IMGS.cakes[heroIdx].url; mainPhoto.classList.remove('iv-photo-swap'); }, 200);
-    }, 3500);
+    /* exemple de témoignage */
+    const testiSection = document.querySelector('.testimonials-section');
+    if (testiSection) {
+      testiSection.style.cssText += ';position:relative;overflow:hidden';
+      const bg = mkDiv('iv-testi-bg');
+      bg.appendChild(mkImg(IMGS.boutique[2].url, ''));
+      testiSection.insertBefore(bg, testiSection.firstChild);
+      Array.from(testiSection.children).forEach(c => {
+        if (c !== bg) { c.style.position = 'relative'; c.style.zIndex = '1'; }
+      });
+    }
+
+    /* carroussel */
+    const whySection = document.querySelector('.why-section');
+    if (whySection) whySection.parentNode.insertBefore(buildStrip(), whySection);
   }
-
-  /* 2. HERO BG : éléments ingrédients décoratifs */
-  const heroBg = document.querySelector('.hero-bg');
-  if (heroBg) {
-    [
-      { src: IMGS.ingredients[3].url, cls: 'iv-deco-float iv-deco-1 iv-float-b' },
-      { src: IMGS.ingredients[4].url, cls: 'iv-deco-float iv-deco-2 iv-float-c' },
-      { src: IMGS.boutique[0].url,    cls: 'iv-deco-float iv-deco-3 iv-float-a' },
-    ].forEach(d => heroBg.appendChild(mkImg(d.src, '', d.cls)));
-  }
-
-  /* 3. CARTES SIGNATURE :  */
-  document.querySelectorAll('.cake-card').forEach((card, i) => {
-    const iconDiv = card.querySelector('.cake-card-icon');
-    if (!iconDiv) return;
-    const wrap  = mkDiv('iv-card-img-wrap');
-    const photo = mkImg(IMGS.cakes[i % IMGS.cakes.length].url, IMGS.cakes[i % IMGS.cakes.length].label, 'iv-card-photo');
-    wrap.appendChild(photo);
-    iconDiv.replaceWith(wrap);
-  });
-
-  /* 4. photo  boutique  */
-  const whyVisual = document.querySelector('.why-visual');
-  if (whyVisual) {
-    whyVisual.innerHTML = '';
-    const photoWrap = mkDiv('iv-why-wrap');
-    photoWrap.innerHTML = `<div class="iv-why-badge">37 ans de savoir-faire ✦</div>`;
-    photoWrap.appendChild(mkImg(IMGS.boutique[1].url, 'Ambiance pâtisserie Maison Dorée', 'iv-why-photo iv-float-b'));
-    whyVisual.appendChild(photoWrap);
-  }
-
-  /* exemple de témoignage */
-  const testiSection = document.querySelector('.testimonials-section');
-  if (testiSection) {
-    testiSection.style.cssText += ';position:relative;overflow:hidden';
-    const bg = mkDiv('iv-testi-bg');
-    bg.appendChild(mkImg(IMGS.boutique[2].url, ''));
-    testiSection.insertBefore(bg, testiSection.firstChild);
-    Array.from(testiSection.children).forEach(c => {
-      if (c !== bg) { c.style.position = 'relative'; c.style.zIndex = '1'; }
-    });
-  }
-
-  /* carroussel */
-  const whySection = document.querySelector('.why-section');
-  if (whySection) whySection.parentNode.insertBefore(buildStrip(), whySection);
-}
-
-
-  //  PAGE COMMANDE
-   
-if (onCommande) {
+} catch (e) {
+  console.warn('Erreur dans images-vivantes.js (page accueil):', e);
   injectHeader(IMGS.boutique[3].url);
 
   document.querySelectorAll('.product-card').forEach((card, i) => {

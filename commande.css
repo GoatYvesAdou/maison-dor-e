@@ -173,7 +173,7 @@
   overflow: hidden;
 }
 .cart-header {
-  background: linear-gradient(135deg, #0D0602, #180C06);
+  background: linear-gradient(135deg, rgba(255,247,237,0.95), rgba(255,238,206,0.95));
   padding: 1.2rem 1.5rem;
   display: flex; align-items: center; justify-content: space-between;
   border-bottom: 1px solid rgba(212,168,67,0.1);
